@@ -5,11 +5,20 @@
 	<title>Document</title>
 	<style>
 		div{
-			width: 20px;
+			width: 200px;
 			height: 200px;
 			background: #000;
 		}
 	</style>
+	<script>
+		window.onload=function(){
+			var oBtn=document.getElementsByTagName('button');
+			var oDiv=document.getElementsByTagName('div');
+			oBtn.onclick=function(){
+				oDiv.style.background='red';
+			}
+		}
+	</script>
 </head>
 <body>
 	<button>按一下</button>
